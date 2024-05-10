@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS\style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
+            <a href="Catalogo.html">Catalogo</a>
+            <a href="#info">Info</a>
+           
+        </nav>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="image/jojo.jpg">
+                <div class="content">
+                    <div class="author">Nvidea</div>
+                    <div class="title">Pc gamer</div>
+                    <div class="topic">Electronica</div>
+                    <div class="des">
+                        Computadora con la utima tecnologia, para jugar y divertirte.
+                    </div>
+                    <div class="buttons">
+                        <button onclick="redireccionarAsusTUFROG()">IR A VER</button>
+                        <button onclick="redireccionarAsusTUFROG()">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/televisoe.jpg">
+                <div class="content">
+                    <div class="author">Samsung</div>
+                    <div class="title">Televisor 4K</div>
+                    <div class="topic">Electronica</div>
+                    <div class="des">
+                        Televior de alta calidad, especial para la familia y reuniones importantes.
+                    </div>
+                    <div class="buttons">
+                        <button onclick="redireccionarTelevision()" >IR A VER</button>
+                        <button onclick="redireccionarTelevision()">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/tabletverdadera.jpg">
+                <div class="content">
+                    <div class="author">Apple</div>
+                    <div class="title">Tablet</div>
+                    <div class="topic">Electronica</div>
+                    <div class="des">
+                        Diseñado especificamente para personas con dinero.
+                    </div>
+                    <div class="buttons">
+                        <button onclick="redireccionarTablet()">IR A VER</button>
+                        <button onclick="redireccionarTablet()">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/iphone.jpg">
+                <div class="content">
+                    <div class="author">Apple</div>
+                    <div class="title">Iphone 15</div>
+                    <div class="topic">Electronica</div>
+                    <div class="des">
+                       Un dispositivo a la menida, si tienes con que pagarlo
+                    </div>
+                    <div class="buttons">
+                        <button onclick="redireccionariphone()">IR A VER</button>
+                        <button onclick="redireccionariphone()">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/jojo.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/televisoe.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/tabletverdadera.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/iphone.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/producto.js"></script>
+</body>
+</html>

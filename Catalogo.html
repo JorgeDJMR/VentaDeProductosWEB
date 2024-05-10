@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="CSS/styleCatalogo.css" />
+	</head>
+	<body>
+		<header>
+			
+			<a href="index.html" class="entrada"><h1>Home</h1></a>
+
+	
+			<div class="container-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon-cart"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+					/>
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="cart-product">
+						<div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="icon-close"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					</div>
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$200</span>
+                    </div>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="image/nike.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Zapatos Nike</h2>
+					<p class="price">$2,000.00</p>
+					<button onclick="redireccionarNike()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/Audifonos.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Audifonos</h2>
+					<p class="price">$80,000.00</p>
+					<button  onclick="redireccionarAudifonos()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/Reloj.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Reloj</h2>
+					<p class="price">$1,500.00</p>
+					<button onclick="redireccionarReloj()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/Relojaple.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Smartwatch</h2>
+					<p class="price">$3,000.00</p>
+					<button onclick="redireccionarAppleWatch()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/Perfume.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Perfume</h2>
+					<p class="price">$11,500.00</p>
+					<button onclick="redireccionarPerfume()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/SusTufRog.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Asus Tuf Rog</h2>
+					<p class="price">$25,000.00</p>
+					<button onclick="redireccionarAsusTUFROG()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/televisoe.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Television</h2>
+					<p class="price">$10,000.00</p>
+					<button onclick="redireccionarTelevision()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/tabletverdadera.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Tablet</h2>
+					<p class="price">$5,000.00</p>
+					<button onclick="redireccionarTablet()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/MsiRaider.avif"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Laptop gamer MSI Raider</h2>
+					<p class="price">$25,000.00</p>
+					<button onclick="redireccionarMSIRaider()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/Msikatana.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Laptop gamer MSI Katana</h2>
+					<p class="price">$25,000.00</p>
+					<button onclick="redireccionarMSIKatana()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/LenovoLegion5.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Laptop Lenovo Legion 5</h2>
+					<p class="price">$26,000.00</p>
+					<button onclick="redireccionarLenovoLegion5()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/LenovoLegion.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Laptop Lenovo Legion</h2>
+					<p class="price">$23,000.00</p>
+					<button onclick="redireccionarLenovoLegion()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/LaptopGamerMsi.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Laptop gamer MSI</h2>
+					<p class="price">$30,000.00</p>
+					<button onclick="redireccionarLaptopGamerMsi()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/HP15.avif"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Laptop HP15</h2>
+					<p class="price">$10,000.00</p>
+					<button onclick="redireccionarhp15()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/iphone.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 15</h2>
+					<p class="price">$20,000.00</p>
+					<button onclick="redireccionariphone()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/AsusFX506.avif"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Asus FX</h2>
+					<p class="price">$23,200.00</p>
+					<button onclick="redireccionarAsusFX()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/AsusRogStrix.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Asus Rog Strix</h2>
+					<p class="price">$20,000.00</p>
+					<button onclick="redireccionarAsusRogStrix()">Comprar</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="image/AsusTuf.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Asus Tuf</h2>
+					<p class="price">$30,000.00</p>
+					<button onclick="redireccionarAsusTuf()">Comprar</button>
+				</div>
+			</div>
+
+
+
+		</div>
+
+        <script src="js/Catalogo.js"></script>
+		<script src="js/producto.js"></script>
+	</body>
+</html>
